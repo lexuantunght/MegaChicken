@@ -45,8 +45,12 @@
 		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
+		797AE3E525B2CAE200B040A3 /* GameMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 797AE3E325B2CAE200B040A3 /* GameMap.cpp */; };
+		797AE3E625B2CAE200B040A3 /* GameMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 797AE3E325B2CAE200B040A3 /* GameMap.cpp */; };
 		799797EC25B297E500814B45 /* mega-chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = 799797EA25B297E500814B45 /* mega-chicken.png */; };
 		799797ED25B297E500814B45 /* mega-chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = 799797EA25B297E500814B45 /* mega-chicken.png */; };
+		79F6318F25B2A138006AFE4A /* DemoScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79F6318E25B2A138006AFE4A /* DemoScene.cpp */; };
+		79F6319025B2A138006AFE4A /* DemoScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79F6318E25B2A138006AFE4A /* DemoScene.cpp */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -134,7 +138,11 @@
 		5087E78A17EB975400C73F5D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		797AE3E325B2CAE200B040A3 /* GameMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameMap.cpp; sourceTree = "<group>"; };
+		797AE3E425B2CAE200B040A3 /* GameMap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameMap.hpp; sourceTree = "<group>"; };
 		799797EA25B297E500814B45 /* mega-chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mega-chicken.png"; path = "../../../../Downloads/mega-chicken.png"; sourceTree = "<group>"; };
+		79F6318C25B2A126006AFE4A /* DemoScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoScene.h; sourceTree = "<group>"; };
+		79F6318E25B2A138006AFE4A /* DemoScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DemoScene.cpp; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -320,6 +328,8 @@
 		791B82DC25B28F510077E185 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				79F6318C25B2A126006AFE4A /* DemoScene.h */,
+				79F6318E25B2A138006AFE4A /* DemoScene.cpp */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -327,6 +337,8 @@
 		791B82DE25B28F620077E185 /* MapObjects */ = {
 			isa = PBXGroup;
 			children = (
+				797AE3E325B2CAE200B040A3 /* GameMap.cpp */,
+				797AE3E425B2CAE200B040A3 /* GameMap.hpp */,
 			);
 			path = MapObjects;
 			sourceTree = "<group>";
@@ -484,6 +496,8 @@
 				1AF87B781F6F77F7007BE51C /* AppController.mm in Sources */,
 				1AF87B8B1F6F782A007BE51C /* RootViewController.mm in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				797AE3E525B2CAE200B040A3 /* GameMap.cpp in Sources */,
+				79F6318F25B2A138006AFE4A /* DemoScene.cpp in Sources */,
 				1AF87B8A1F6F7822007BE51C /* main.m in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 			);
@@ -494,8 +508,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				79F6319025B2A138006AFE4A /* DemoScene.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				797AE3E625B2CAE200B040A3 /* GameMap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +562,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.18521616.mega-chicken";
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
 				VALID_ARCHS = "arm64 armv7 x86_64";
 			};
@@ -582,7 +598,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.18521616.mega-chicken";
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
 				VALID_ARCHS = "arm64 armv7 x86_64";
 			};
